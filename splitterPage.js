@@ -7,22 +7,34 @@ function validateNumber(input) {
   }
   function calculateTip() {
     // Get the entered amount
-    const amountInput = document.getElementsByClassName('input1')[0]; // Assuming you have only one input with class 'input1'
+    const amountInput = document.getElementsByClassName('input1')[0];
     const amount = parseFloat(amountInput.value);
 
-    // Get the button element
-    const myButton = document.getElementsByTagName('button')[0]; // Assuming you have only one button
+    // Get all button elements
+    const myButtons = document.querySelectorAll('button');
 
-    // Get the text on the button using innerText
-    const buttonTextInnerText = myButton.innerText;
+    // Iterate over the buttons to find the clicked button
+    let clickedButton;
+    for (const button of myButtons) {
+        button.addEventListener('click', function() {
+            // Store the clicked button
+            clickedButton = button;
 
-    // Convert the buttonTextInnerText to a number for the calculation
-    const tipPercentage = parseFloat(buttonTextInnerText);
+            // Get the text on the clicked button using innerText
+            const buttonTextInnerText = clickedButton.innerText;
 
-    // Calculate the tip amount based on the button text (assumed percentage)
-    const tipAmount = (tipPercentage * amount)/10;
+            // Calculate the tip amount based on the button text (assumed percentage)
+            const tipAmount = (parseFloat(buttonTextInnerText) * amount) / 100;
 
-    // Update the tipAmount input box with the calculated tip
-    const tipAmountInput = document.getElementsByClassName('input2')[0]; // Assuming you have only one input with class 'input2'
-    tipAmountInput.value = tipAmount.toFixed(2); // Display the tip amount with two decimal places
+            // Update the tipAmount input box with the calculated tip
+            const tipAmountInput = document.getElementsByClassName('input2')[0];
+
+            // Check if the tipAmountInput element exists
+            if (tipAmountInput) {
+                tipAmountInput.value = tipAmount.toFixed(2); // Display the tip amount with two decimal places
+            } else {
+                alert('Error: Unable to find the tip input element.');
+            }
+        });
+    }
 }
