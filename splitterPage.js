@@ -11,7 +11,7 @@ function validateNumber(input) {
     const amount = parseFloat(amountInput.value);
 
     // Get all button elements
-    const myButtons = document.querySelectorAll('button');
+    const myButtons = document.querySelectorAll('button:not(#b6)');
 
     // Iterate over the buttons to find the clicked button
     let clickedButton;
@@ -49,5 +49,17 @@ function cantBeZero() {
     } else {
         // If numberOfPeopleValue is not 0, hide the text
         cantBeZeroElement.style.display = 'none';
+    }
+}
+function input3() {
+    const numberOfPeople = document.querySelector(".input3"); // Use querySelector to get the first element with class 'input3'
+    const numberOfPeopleValue = parseFloat(numberOfPeople.value);
+
+    if (numberOfPeopleValue === 0) {
+        // If numberOfPeopleValue is 0, change border color to red
+        numberOfPeople.style.borderColor = '#e06767';
+    } else {
+        // If numberOfPeopleValue is not 0, maintain the green color
+        numberOfPeople.style.borderColor = '#5fc7a4';
     }
 }
