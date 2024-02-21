@@ -38,3 +38,16 @@ function validateNumber(input) {
         });
     }
 }
+function cantBeZero() {
+    const numberOfPeople = document.querySelector(".input3"); // Use querySelector to get the first element with class 'input3'
+    const cantBeZeroElement = document.querySelector(".c1p4"); // Use querySelector to get the first element with class 'c1p4'
+    const numberOfPeopleValue = parseFloat(numberOfPeople.value);
+
+    if (numberOfPeopleValue === 0) {
+        // If numberOfPeopleValue is 0, show the text
+        cantBeZeroElement.style.display = 'block';
+    } else {
+        // If numberOfPeopleValue is not 0, hide the text
+        cantBeZeroElement.style.display = 'none';
+    }
+}

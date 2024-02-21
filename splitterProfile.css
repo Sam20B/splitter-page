@@ -171,6 +171,7 @@ button:hover {
 }
 .c1p4 {
     position:absolute;
+    display:none;
     top:67%;
     left:32%;
     color:rgb(224, 103, 103);
@@ -183,7 +184,7 @@ button:hover {
     left:5%;
     width:42%;
     height:35px;
-    border:2px solid rgb(224, 103, 103);
+    border:2px solid rgb(95, 199, 164);
     border-radius:5px;
     background-color:rgb(247, 250, 249);
     font-size:large;
