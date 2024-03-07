@@ -63,3 +63,14 @@ function input3() {
         numberOfPeople.style.borderColor = '#5fc7a4';
     }
 }
+function multiplyValues() {
+    // Get the values from the input boxes
+    var input1Value = document.getElementsByClassName('input2').value;
+    var input2Value = document.getElementsByClassName('input3').value;
+
+    // Multiply the values
+    var result = input1Value * input2Value;
+
+    // Update the paragraph with the result
+    document.getElementsByClassName('.c2p7').textContent = result.toFixed(2);
+  }
