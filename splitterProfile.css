@@ -205,7 +205,7 @@ button:hover {
     left:53%;
     width:43%;
     height:82%;
-    background-color:#005259;
+    background-color:rgb(0, 82, 89);
     border-radius:10px;
 }
 .c2p1 {
@@ -260,21 +260,43 @@ button:hover {
 }
 .c2p7 {
     position:absolute;
-    top:1%;
-    right:10%;
+    top:12%;
+    right:0%;
+    background-color: rgb(0, 82, 89);
+    border:none;
+    width:30%;
     color:rgb(95, 199, 164);
     font-family: consolas;
-    font-size:xx-large;
+    font-size:x-large;
     font-weight:600;
+    text-align:left;
+    outline:none;
+}
+.c2p7 :placeholder-shown {
+    font-family: consolas;
+    font-size:x-large;
+    font-weight:600;
+    color:rgb(95, 199, 164);
+}
+.c2p8 placeholder-shown {
+    font-family: consolas;
+    font-size:x-large;
+    font-weight:600;
+    color:rgb(95, 199, 164);
 }
 .c2p8 {
     position:absolute;
-    top:24%;
-    right:10%;
+    top:36%;
+    right:0%;
+    background-color:rgb(0, 82, 89);
+    width:30%;
+    border:none;
     color:rgb(95, 199, 164);
     font-family: consolas;
-    font-size:xx-large;
-    font-weight:600
+    font-size:x-large;
+    font-weight:600;
+    text-align:left;
+    outline: none;
 }
 .b6 {
     position:absolute;

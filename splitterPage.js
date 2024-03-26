@@ -65,12 +65,43 @@ function input3() {
 }
 function multiplyValues() {
     // Get the values from the input boxes
-    var input1Value = document.getElementsByClassName('input2').value;
-    var input2Value = document.getElementsByClassName('input3').value;
+    const input1 = document.getElementsByClassName('input2');
+    const input1Value = parseFloat(input1.value);
+    const input2 = document.getElementsByClassName('input3').value;
 
     // Multiply the values
-    var result = input1Value * input2Value;
+    const result = parseFloat(input1Value * input2);
 
-    // Update the paragraph with the result
-    document.getElementsByClassName('.c2p7').textContent = result.toFixed(2);
+    const input4 = document.getElementsByClassName('c2p7')[0];
+
+    // Check if the input4 element exists
+    if (input4) {
+        input4.value = result.toFixed(2); // Display the input4 with two decimal places
+    } else {
+        alert('#.');
+    }
+  }
+  function multiplyvalues2() {
+    // Get the values from the input boxes
+    const input1Value = document.getElementsByClassName('input1').value;
+    const input3Value = document.getElementsByClassName('input3').value;
+
+    const res = (parseFloat(input1Value * input3Value));
+
+    const input5 = document.getElementsByClassName('c2p8')[0];
+
+    // Check if the input4 element exists
+    if (input5) {
+        input5.value = res.toFixed(2); // Display the input4 with two decimal places
+    } else {
+        alert('#.');
+    }
+  }
+  function notMoreThan(){
+    //get the value that is in the number of people input box
+    const input3value = document.getElementsByClassName('input3').value;
+
+    if (input3value > 50) {
+        alert('Number of people cannot exceed 50');
+    }
   }
