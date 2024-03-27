@@ -5,7 +5,7 @@ function validateNumber(input) {
         alert('Please enter a valid number');
     }
   }
-  function calculateTip() {
+function calculateTip() {
     // Get the entered amount
     const amountInput = document.getElementsByClassName('input1')[0];
     const amount = parseFloat(amountInput.value);
@@ -65,43 +65,63 @@ function input3() {
 }
 function multiplyValues() {
     // Get the values from the input boxes
-    const input1 = document.getElementsByClassName('input2');
-    const input1Value = parseFloat(input1.value);
-    const input2 = document.getElementsByClassName('input3').value;
+    const input1 = document.getElementsByClassName('input2')[0].value;
+    const input1Value = parseFloat(input1);
+    const input2 = document.getElementsByClassName('input3')[0].value;
+    const input2Value = parseFloat(input2);
+
+    // Check if the inputs are valid numbers
+    if (isNaN(input1Value) || isNaN(input2Value)) {
+        alert('Please enter valid numbers in both input fields.');
+        return;
+    }
 
     // Multiply the values
-    const result = parseFloat(input1Value * input2);
+    const result = input1Value * input2Value;
 
+    // Display the result
     const input4 = document.getElementsByClassName('c2p7')[0];
 
     // Check if the input4 element exists
     if (input4) {
         input4.value = result.toFixed(2); // Display the input4 with two decimal places
     } else {
-        alert('#.');
+        alert('Result input element not found.');
     }
-  }
-  function multiplyvalues2() {
+}
+
+function multiplyValues2() {
     // Get the values from the input boxes
-    const input1Value = document.getElementsByClassName('input1').value;
-    const input3Value = document.getElementsByClassName('input3').value;
+    const billInput = document.getElementsByClassName('input1')[0].value;
+    const billInputValue = parseFloat(billInput);
+    const peopleNumber = document.getElementsByClassName('input3')[0].value;
+    const peopleNumberValue = parseFloat(peopleNumber);
 
-    const res = (parseFloat(input1Value * input3Value));
+    // Check if the inputs are valid numbers
+    if (isNaN(billInputValue) || isNaN(peopleNumberValue)) {
+        alert('Please enter valid number of people.');
+        return;
+    }
 
-    const input5 = document.getElementsByClassName('c2p8')[0];
+    // Multiply the values
+    const result = billInputValue * peopleNumberValue;
+
+    // Display the result
+    const input4 = document.getElementsByClassName('c2p8')[0];
 
     // Check if the input4 element exists
-    if (input5) {
-        input5.value = res.toFixed(2); // Display the input4 with two decimal places
+    if (input4) {
+        input4.value = result.toFixed(2); // Display the input4 with two decimal places
     } else {
-        alert('#.');
+        alert('Result input element not found.');
     }
-  }
-  function notMoreThan(){
+}
+function notMoreThan(){
     //get the value that is in the number of people input box
-    const input3value = document.getElementsByClassName('input3').value;
+    const input3 = document.getElementsByClassName('input3');
+    const input3value = parseFloat(input3.value)
 
-    if (input3value > 50) {
-        alert('Number of people cannot exceed 50');
+    if (input3value > 99) {
+        alert('Number of people cannot exceed 99');
     }
   }
