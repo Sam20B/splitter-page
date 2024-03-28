@@ -92,6 +92,30 @@ function multiplyValues() {
 
 function multiplyValues2() {
     // Get the values from the input boxes
+    const input1 = document.getElementsByClassName('input2')[0].value;
+    const input1Value = parseFloat(input1);
+    const input2 = document.getElementsByClassName('input3')[0].value;
+    const input2Value = parseFloat(input2);
+
+    // Check if the inputs are valid numbers
+    if (isNaN(input1Value) || isNaN(input2Value)) {
+        alert('Please enter valid numbers in both input fields.');
+        return;
+    }
+
+    // Multiply the values
+    const result = input1Value * input2Value;
+
+    // Display the result
+    const input4 = document.getElementsByClassName('c2p7')[0];
+
+    // Check if the input4 element exists
+    if (input4) {
+        input4.value = result.toFixed(2); // Display the input4 with two decimal places
+    } else {
+        alert('Result input element not found.');
+    }
+    // Get the values from the input boxes
     const billInput = document.getElementsByClassName('input1')[0].value;
     const billInputValue = parseFloat(billInput);
     const peopleNumber = document.getElementsByClassName('input3')[0].value;
@@ -104,14 +128,15 @@ function multiplyValues2() {
     }
 
     // Multiply the values
-    const result = billInputValue * peopleNumberValue;
+    const answer = billInputValue * peopleNumberValue;
+    const total = result + answer;
 
     // Display the result
-    const input4 = document.getElementsByClassName('c2p8')[0];
+    const input5 = document.getElementsByClassName('c2p8')[0];
 
     // Check if the input4 element exists
-    if (input4) {
-        input4.value = result.toFixed(2); // Display the input4 with two decimal places
+    if (input5) {
+        input5.value = total.toFixed(2); // Display the input4 with two decimal places
     } else {
         alert('Result input element not found.');
     }
@@ -125,3 +150,6 @@ function notMoreThan(){
         alert('Number of people cannot exceed 99');
     }
   }
+function reset() {
+    
+}
