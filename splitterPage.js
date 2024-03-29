@@ -150,6 +150,7 @@ function notMoreThan(){
         alert('Number of people cannot exceed 99');
     }
   }
-function reset() {
+function reset1() {
+    const clear1 = document.getElementsByClassName("input1");
     
 }
