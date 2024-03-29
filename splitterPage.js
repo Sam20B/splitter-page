@@ -154,3 +154,17 @@ function reset1() {
     const clear1 = document.getElementsByClassName("input1");
     
 }
+function reset1() {
+    const clear1 = document.getElementsByClassName("input1")[0];
+    clear1.value = '';
+    const clear2 = document.getElementsByClassName("input2")[0];
+    clear2.value = '';
+    const clear3 = document.getElementsByClassName("input3")[0];
+    clear3.value = '';
+}
+function reset2() {
+    const change1 = document.getElementsByClassName("c2p7")[0];
+    change1.value = '0.00';
+    const change2 = document.getElementsByClassName("c2p8")[0];
+    change2.value = '0.00';
+}
