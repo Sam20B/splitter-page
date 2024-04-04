@@ -4,7 +4,8 @@ function validateNumber(input) {
     if (input.value === 0){
         alert('Please enter a valid number');
     }
-  }
+}
+
 function calculateTip() {
     // Get the entered amount
     const amountInput = document.getElementsByClassName('input1')[0];
@@ -38,6 +39,7 @@ function calculateTip() {
         });
     }
 }
+
 function cantBeZero() {
     const numberOfPeople = document.querySelector(".input3"); // Use querySelector to get the first element with class 'input3'
     const cantBeZeroElement = document.querySelector(".c1p4"); // Use querySelector to get the first element with class 'c1p4'
@@ -51,6 +53,7 @@ function cantBeZero() {
         cantBeZeroElement.style.display = 'none';
     }
 }
+
 function input3() {
     const numberOfPeople = document.querySelector(".input3"); // Use querySelector to get the first element with class 'input3'
     const numberOfPeopleValue = parseFloat(numberOfPeople.value);
@@ -63,6 +66,7 @@ function input3() {
         numberOfPeople.style.borderColor = '#5fc7a4';
     }
 }
+
 function multiplyValues() {
     // Get the values from the input boxes
     const input1 = document.getElementsByClassName('input2')[0].value;
@@ -141,6 +145,7 @@ function multiplyValues2() {
         alert('Result input element not found.');
     }
 }
+
 function notMoreThan(){
     //get the value that is in the number of people input box
     const input3 = document.getElementsByClassName('input3');
@@ -149,11 +154,12 @@ function notMoreThan(){
     if (input3value > 99) {
         alert('Number of people cannot exceed 99');
     }
-  }
+}
+
 function reset1() {
     const clear1 = document.getElementsByClassName("input1");
-    
 }
+
 function reset1() {
     const clear1 = document.getElementsByClassName("input1")[0];
     clear1.value = '';
