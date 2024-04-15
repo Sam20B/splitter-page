@@ -272,18 +272,6 @@ button:hover {
     text-align:left;
     outline:none;
 }
-.c2p7 :placeholder-shown {
-    font-family: consolas;
-    font-size:x-large;
-    font-weight:600;
-    color:rgb(95, 199, 164);
-}
-.c2p8 placeholder-shown {
-    font-family: consolas;
-    font-size:x-large;
-    font-weight:600;
-    color:rgb(95, 199, 164);
-}
 .c2p8 {
     position:absolute;
     top:36%;

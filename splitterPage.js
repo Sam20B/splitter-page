@@ -1,5 +1,13 @@
 function validateNumber(input) {
     // Remove non-numeric characters
+    input.value = input.value.replace(/[^0-9]/.g, '');
+    if (input.value === 0){
+        alert('Please enter a valid number');
+    }
+}
+
+function validateNumber1(input) {
+    // Remove non-numeric characters
     input.value = input.value.replace(/[^0-9]/g, '');
     if (input.value === 0){
         alert('Please enter a valid number');
@@ -157,20 +165,17 @@ function notMoreThan(){
 }
 
 function reset1() {
-    const clear1 = document.getElementsByClassName("input1");
-}
-
-function reset1() {
-    const clear1 = document.getElementsByClassName("input1")[0];
+    const clear1 = document.getElementsByClassName("input1")[0]; //clear the content in input1
     clear1.value = '';
-    const clear2 = document.getElementsByClassName("input2")[0];
+    const clear2 = document.getElementsByClassName("input2")[0]; //clear the content in input2
     clear2.value = '';
-    const clear3 = document.getElementsByClassName("input3")[0];
+    const clear3 = document.getElementsByClassName("input3")[0]; //clear the content in input3
     clear3.value = '';
 }
+
 function reset2() {
-    const change1 = document.getElementsByClassName("c2p7")[0];
+    const change1 = document.getElementsByClassName("c2p7")[0]; //set the value of the tip to 0.00
     change1.value = '0.00';
-    const change2 = document.getElementsByClassName("c2p8")[0];
+    const change2 = document.getElementsByClassName("c2p8")[0]; //set the value of the total to 0.00
     change2.value = '0.00';
 }
