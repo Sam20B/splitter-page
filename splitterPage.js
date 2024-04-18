@@ -159,8 +159,8 @@ function notMoreThan(){
     const input3 = document.getElementsByClassName('input3')[0];
     const input3value = parseFloat(input3.value)
 
-    if (input3value > 50) {
-        alert('Number of people cannot exceed 50');
+    if (input3value > 99) {
+        alert('Number of people cannot exceed 99');
     }
 }
 
