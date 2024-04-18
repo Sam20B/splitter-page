@@ -1,6 +1,7 @@
 body{
     background-color:rgb(184, 233, 217);
     min-width: 800px; /* Set your desired minimum width */
+    min-height: 550px; /* Set your desired minimum height */
 }
 html, body {
     height: 100%;
