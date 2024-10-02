@@ -116,7 +116,7 @@ function multiplyValues2() {
     }
 
     // Multiply the values
-    const result = input1Value /* * input2Value*/;
+    const result = input1Value * input2Value;
 
     // Display the result
     const input4 = document.getElementsByClassName('c2p7')[0];
