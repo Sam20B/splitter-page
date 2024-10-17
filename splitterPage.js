@@ -83,10 +83,10 @@ function multiplyValues() {
     const input2Value = parseFloat(input2);
 
     // Check if the inputs are valid numbers
-    if (isNaN(input1Value) || isNaN(input2Value)) {
+    /*if (isNaN(input1Value) || isNaN(input2Value)) {
         alert('Please enter valid numbers in both input fields.');
         return;
-    }
+    }*/
 
     // Multiply the values
     const result = input1Value * input2Value;
@@ -110,10 +110,10 @@ function multiplyValues2() {
     const input2Value = parseFloat(input2);
 
     // Check if the inputs are valid numbers
-    if (isNaN(input1Value) || isNaN(input2Value)) {
+    /*if (isNaN(input1Value) || isNaN(input2Value)) {
         alert('Please enter valid numbers in both input fields.');
         return;
-    }
+    }*/
 
     // Multiply the values
     const result = input1Value * input2Value;
