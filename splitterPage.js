@@ -1,6 +1,14 @@
+
 function validateNumber(input){
     input.value = input.value.replace(/\D/g, '');
     if(!parseInt(input.value)) alert ('Please enter a vlid number')
+
+function validateNumber(input) {
+    // Remove non-numeric characters
+    input.value = input.value.replace(/[^0-9]/g, '');
+    if (input.value === 0){
+        alert('Please enter a valid number');
+    }
 }
 
 function validateNumber1(input) {
@@ -80,10 +88,10 @@ function multiplyValues() {
     const input2Value = parseFloat(input2);
 
     // Check if the inputs are valid numbers
-    if (isNaN(input1Value) || isNaN(input2Value)) {
+    /*if (isNaN(input1Value) || isNaN(input2Value)) {
         alert('Please enter valid numbers in both input fields.');
         return;
-    }
+    }*/
 
     // Multiply the values
     const result = input1Value * input2Value;
@@ -107,10 +115,10 @@ function multiplyValues2() {
     const input2Value = parseFloat(input2);
 
     // Check if the inputs are valid numbers
-    if (isNaN(input1Value) || isNaN(input2Value)) {
+    /*if (isNaN(input1Value) || isNaN(input2Value)) {
         alert('Please enter valid numbers in both input fields.');
         return;
-    }
+    }*/
 
     // Multiply the values
     const result = input1Value * input2Value;
