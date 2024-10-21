@@ -1,7 +1,12 @@
-
-function validateNumber(input){
-    input.value = input.value.replace(/\D/g, '');
-    if(!parseInt(input.value)) alert ('Please enter a vlid number')
+function validateNumber(input) {
+    // Remove non-numeric characters
+    input.value = input.value.replace(/[^0-9]/g, '');
+    if (input.value === '' || isNaN(parseInt(input.value))) {
+        alert('Please enter a valid number');
+        return false;
+    }
+    return true;
+}
 
 function validateNumber(input) {
     // Remove non-numeric characters
