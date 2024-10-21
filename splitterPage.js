@@ -1,8 +1,3 @@
-
-function validateNumber(input){
-    input.value = input.value.replace(/\D/g, '');
-    if(!parseInt(input.value)) alert ('Please enter a vlid number')
-
 function validateNumber(input) {
     // Remove non-numeric characters
     input.value = input.value.replace(/[^0-9]/g, '');
