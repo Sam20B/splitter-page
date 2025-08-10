@@ -85,7 +85,7 @@ function input3() {
     }
 }
 
-function multiplyValues() {
+/*function multiplyValues() {
     // Get the values from the input boxes
     const input1 = document.getElementsByClassName('input2')[0].value;
     const input1Value = parseFloat(input1);
@@ -99,10 +99,10 @@ function multiplyValues() {
     }*/
 
     // Multiply the values
-    const result = input1Value * input2Value;
+    //const result = input1Value * input2Value;
 
     // Display the result
-    const input4 = document.getElementsByClassName('c2p7')[0];
+    /*const input4 = document.getElementsByClassName('c2p7')[0];
 
     // Check if the input4 element exists
     if (input4) {
@@ -110,7 +110,7 @@ function multiplyValues() {
     } else {
         alert('Result input element not found.');
     }
-}
+}*/
 
 function multiplyValues2() {
     // Get the values from the input boxes
@@ -150,8 +150,8 @@ function multiplyValues2() {
     }
 
     // Multiply the values ... add the whole bill instead of multiplying the bill by the number of people again
-    const answer = input1Value * peopleNumberValue /* * peopleNumberValue*/;
-    const total = input2Value + answer;
+    const answer = input2Value * peopleNumberValue /* * peopleNumberValue*/;
+    const total = input1Value + answer;
 
     // Display the result
     const input5 = document.getElementsByClassName('c2p8')[0];
