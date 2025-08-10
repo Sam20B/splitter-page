@@ -126,7 +126,7 @@ function multiplyValues2() {
     }*/
 
     // Multiply the values
-    const result = input1Value * input2Value;
+    //const result = input1Value * input2Value;
 
     // Display the result
     const input4 = document.getElementsByClassName('c2p7')[0];
@@ -150,8 +150,8 @@ function multiplyValues2() {
     }
 
     // Multiply the values ... add the whole bill instead of multiplying the bill by the number of people again
-    const answer = billInputValue * peopleNumberValue /* * peopleNumberValue*/;
-    const total = result + answer;
+    const answer = input1Value * peopleNumberValue /* * peopleNumberValue*/;
+    const total = input2Value + answer;
 
     // Display the result
     const input5 = document.getElementsByClassName('c2p8')[0];
