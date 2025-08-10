@@ -150,7 +150,7 @@ function multiplyValues2() {
     }
 
     // Multiply the values ... add the whole bill instead of multiplying the bill by the number of people again
-    const answer = billInputValue /* * peopleNumberValue*/;
+    const answer = billInputValue * peopleNumberValue /* * peopleNumberValue*/;
     const total = result + answer;
 
     // Display the result
