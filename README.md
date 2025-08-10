@@ -1,2 +1,3 @@
 # splitter-page
-this project was made using html,css and javascript and calculates the tip depending on the percentage selected
+This takes the amount to be paid plus the tip and multiplies the amount by the mumber of people
+You can view the page [here](https://sam20b.github.io/splitter-page/splitterPage.html)
