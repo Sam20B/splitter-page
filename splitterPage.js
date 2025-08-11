@@ -150,8 +150,8 @@ function multiplyValues2() {
     }
 
     // Multiply the values ... add the whole bill instead of multiplying the bill by the number of people again
-    const answer = input1Value * peopleNumberValue;
-    const total = result + answer;
+    const answer = billInputValue * peopleNumberValue;
+    const total = input2Value + answer;
 
     // Display the result
     const input5 = document.getElementsByClassName('c2p8')[0];
