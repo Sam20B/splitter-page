@@ -187,4 +187,5 @@ function reset2() {
     const change1 = document.getElementsByClassName("c2p7")[0]; //set the value of the tip to 0.00
     change1.value = '0.00';
     const change2 = document.getElementsByClassName("c2p8")[0]; //set the value of the total to 0.00
+    change2.value = '0.00';
 }
