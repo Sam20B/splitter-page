@@ -189,3 +189,47 @@ function reset2() {
     const change2 = document.getElementsByClassName("c2p8")[0]; //set the value of the total to 0.00
     change2.value = '0.00';
 }
+
+const receiptBtn =
+    document.getElementById("b7");
+const receiptModal =
+    document.getElementById("receipt-modal");
+const closeReceipt =
+    document.getElementById("close-receipt");
+receiptBtn.addEventListener("click", () => {
+    receiptModal.style.display = "flex";
+
+  // Fill receipt data here
+    document.getElementById("receipt-id").textContent = receiptID.value;
+
+    document.getElementById("receipt-bill").textContent = billInput.value;
+
+    document.getElementById("receipt-tip").textContent = tipAmount.value;
+
+    document.getElementById("receipt-people").textContent = peopleInput.value;
+
+    document.getElementById("receipt-total").textContent = totalPerPerson;
+});
+
+closeReceipt.addEventListener("click", () => {
+    receiptModal.style.display = "none";
+});
+
+const receiptID = generateReceiptID();
+document.getElementById("receipt-id").textContent = receiptID;
+
+const receiptData = {
+    id: receiptID,
+    bill: billInput.value,
+    people: peopleInput.value,
+    tip: tipAmount,
+    total: totalPerPerson,
+    date: new Date().toLocaleString()
+};
+
+let receipts = JSON.parse(localStorage.getItem("receipts")) || [];
+
+receipts.push(receiptData);
+
+localStorage.setItem("receipts", JSON.stringify(receipts)
+);
